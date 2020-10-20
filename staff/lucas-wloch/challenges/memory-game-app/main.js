@@ -1,3 +1,37 @@
+
+var buttons = document.querySelectorAll('.button');
+var clickedCards = [];
+
+
+buttons.forEach(function(button){
+    button.addEventListener('click' , function(){
+        button.classList.add("show");
+        clickedCards.push()
+        checkResult();
+        updateDisplay();
+    })
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 
     start(){
@@ -12,14 +46,6 @@
 
 
     }
-
-
-
-
-
-
-
-
 
 
 */
