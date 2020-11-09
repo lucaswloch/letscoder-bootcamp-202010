@@ -2,18 +2,9 @@ class game {
     constructor (jugador,jugando){
       this.jugando = jugando;
       this.jugador = jugador;
-     // clear()
    };
-    /*clear (){
-        i = 0
-        this.jugador = ""
-        this.jugando = ""
-        buttons.forEach( button => {
-            button.textContent = ""
-        })
-    }*/
+   
     play (num) {    
-        //if (jugando.textContent !=="O" && jugando.textContent !== "X"){
             switch(num) {
                 case 0:
                 case 2:
@@ -32,8 +23,6 @@ class game {
                 break;
             };
             jugador = this.jugador;
-            //updateDisplay();
-      //  } /*return;*/
     };
     updateDisplay() {
         this.jugando = `${"turno de: "} ${proximoJugador}`;
@@ -81,16 +70,7 @@ class game {
 };
 
 
-// const( desde [0] hasta [8])
-/*const button1 = document.querySelector("[data-button-1]")
-const button2 = document.querySelector("[data-button-2]")
-const button3 = document.querySelector("[data-button-3]")
-const button4 = document.querySelector("[data-button-4]")
-const button5 = document.querySelector("[data-button-5]")
-const button6 = document.querySelector("[data-button-6]")
-const button7 = document.querySelector("[data-button-7]")
-const button8 = document.querySelector("[data-button-8]")
-const button9 = document.querySelector("[data-button-9]")*/
+
 const buttons = document.querySelectorAll("[data-button]");
 const jugando = document.querySelector("[data-jugando]");
 let jugador;
@@ -113,25 +93,6 @@ buttons.forEach( button => {
     });
 });
 
-/*if (i = buttons.length) {
-                game.endgame()
-            } return*/
-//button1.addEventListener ("click")
-/*for (let i = 0; i < buttons.length; i++) {
-}*/
-/*for (let i=0;i<buttons.length;i++) {
-    //en Juego
-    buttons.forEach( button => {
-        button.addEventListener("click", () => {
-            //game.rotate()
-            game.play(i)
-            button.textContent = `${jugador}`
-            game.updateDisplay()
-            console.log("hello")
-            //i++
-        })
-    })
-}*/
 
    
 
